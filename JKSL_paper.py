@@ -41,7 +41,7 @@ def tblDataCstQery():
     try:
             keyword_query=[]
             #   Default port =1200
-            conn_string = "host='121.160.17.80' dbname ='EcoBank' user='dev' password='nie12345' port='12000'"
+            conn_string = "host='121.160.16.80' dbname ='seoDB' user='dev' password='ne12345' port='12000'"
             conn = psycopg2.connect(conn_string)
             cur = conn.cursor()
 
