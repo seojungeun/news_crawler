@@ -13,7 +13,7 @@ def clkwSelectTblNewsqQery():
     try:
             keywordQueryList=[]
             #   Default port =1200
-            conn_string = "host='121.160.17.80' dbname ='EcoBank' user='dev' password='nie12345' port='12000'"
+            conn_string = "host='121.160.16.80' dbname ='seoDB' user='dev' password='ne12345' port='12000'"
             conn = psycopg2.connect(conn_string)
             cur = conn.cursor()
 
@@ -45,7 +45,7 @@ def clkwSelectTblThssqQery():
     try:
             keywordQueryList=[]
             #   Default port =1200
-            conn_string = "host='121.160.17.80' dbname ='EcoBank' user='dev' password='nie12345' port='12000'"
+            conn_string = "host='121.160.16.80' dbname ='seoDB' user='dev' password='ne12345' port='12000'"
             conn = psycopg2.connect(conn_string)
             cur = conn.cursor()
 
@@ -76,7 +76,7 @@ def clorsSlectTblThssQery():
     try:
             keyword_query=[]
             #   Default port =1200
-            conn_string = "host='121.160.17.80' dbname ='EcoBank' user='dev' password='nie12345' port='12000'"
+            conn_string = "host='121.160.16.80' dbname ='seoDB' user='dev' password='ne12345' port='12000'"
             conn = psycopg2.connect(conn_string)
             cur = conn.cursor()
 
@@ -104,7 +104,7 @@ def clorsSlectTblNewsQery():
     try:
             keyword_query=[]
             #   Default port =1200
-            conn_string = "host='121.160.17.80' dbname ='EcoBank' user='dev' password='nie12345' port='12000'"
+            conn_string = "host='121.160.16.80' dbname ='seoDB' user='dev' password='ne12345' port='12000'"
             conn = psycopg2.connect(conn_string)
             cur = conn.cursor()
 
@@ -132,7 +132,7 @@ def tblDataCstQery():
     try:
             keyword_query=[]
             #   Default port =1200
-            conn_string = "host='121.160.17.80' dbname ='EcoBank' user='dev' password='nie12345' port='12000'"
+            conn_string = "host='121.160.16.80' dbname ='seoDB' user='dev' password='ne12345' port='12000'"
             conn = psycopg2.connect(conn_string)
             cur = conn.cursor()
 
@@ -165,7 +165,7 @@ def tblThssDataCstQery():
     try:
             keyword_query=[]
             #   Default port =1200
-            conn_string = "host='121.160.17.80' dbname ='EcoBank' user='dev' password='nie12345' port='12000'"
+            conn_string = "host='121.160.16.80' dbname ='seoDB' user='dev' password='ne12345' port='12000'"
             conn = psycopg2.connect(conn_string)
             cur = conn.cursor()
 
@@ -196,7 +196,7 @@ def tblThssDataCstQery():
 # clst insrt 쿼리 문
 def insertDataClst(InsertTblDataClstData):
     try:
-        conn_string = "host='121.160.17.80' dbname ='EcoBank' user='dev' password='nie12345' port='12000'"
+        conn_string = "host='121.160.16.80' dbname ='seoDB' user='dev' password='ne12345' port='12000'"
         conn = psycopg2.connect(conn_string)
         curs = conn.cursor()   
         insert_keyword_query="""INSERT INTO data_scraping_analysis.tbl_data_clst 
@@ -230,7 +230,7 @@ def insertNewsColct(InsertTblNewsColctData):
         keyword_query=[]
         
     #   Default port =1200
-        conn_string = "host='121.160.17.80' dbname ='EcoBank' user='dev' password='nie12345' port='12000'"
+        conn_string = "host='121.160.16.80' dbname ='seoDB' user='dev' password='ne12345' port='12000'"
         conn = psycopg2.connect(conn_string)
         curs = conn.cursor()   
         insert_keyword_query="""INSERT INTO data_scraping_analysis.tbl_news_colct 
@@ -269,7 +269,7 @@ def insertThssColct(InsertTblThssColctData):
         keyword_query=[]
         
     #   Default port =1200
-        conn_string = "host='121.160.17.80' dbname ='EcoBank' user='dev' password='nie12345' port='12000'"
+        conn_string = "host='121.160.16.80' dbname ='seoDB' user='dev' password='ne12345' port='12000'"
         conn = psycopg2.connect(conn_string)
         curs = conn.cursor()   
         insert_keyword_query="""INSERT INTO data_scraping_analysis.tbl_thss_colct 
